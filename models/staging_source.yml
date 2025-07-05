@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+   - name: stg_source
+     database: my_db
+     schema: my_schema
+     tables: 
+      - name: raw_customers
+        columns:
+          - name: user_id
+            tests:
+              - unique
+              - not_null
+      - name: raw_restaurants
+      - name: raw_orders
+       
+     
+
